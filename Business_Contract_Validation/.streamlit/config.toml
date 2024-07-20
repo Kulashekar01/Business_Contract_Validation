@@ -1,0 +1,83 @@
+[theme]
+primaryColor = "#1E90FF"  # Dodger Blue
+backgroundColor = "#FFFFFF"  # White
+secondaryBackgroundColor = "#F8F8F8"  # Light Gray
+textColor = "#333333"  # Dark Gray
+font = "sans serif"
+
+[sidebar]
+title = "Business Contract Validation"
+subtitle = "Upload and Validate Contracts"
+image = "https://example.com/logo.png"
+markdown = """
+## Instructions
+1. Select the type of agreement.
+2. Upload your PDF contract.
+3. Review the extracted and highlighted content.
+"""
+
+[global]
+page_title = "Business Contract Validation"
+page_icon = "📄"
+layout = "wide"
+initial_sidebar_state = "expanded"
+
+[components]
+# Custom CSS for additional styling
+custom_css = """
+<style>
+    .main-header { 
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #1E90FF;  /* Dodger Blue */
+        text-align: center;
+        margin-top: 20px;
+        text-shadow: 1px 1px 2px #888888;  /* Shadow effect */
+    }
+    .sub-header {
+        font-size: 1.75em;
+        font-weight: bold;
+        color: #1E90FF;  /* Dodger Blue */
+        margin-top: 20px;
+        text-shadow: 1px 1px 2px #888888;  /* Shadow effect */
+    }
+    .highlight {
+        background-color: #FFFF00; /* Yellow background for highlighting */
+        font-weight: bold;
+    }
+    .file-upload-section {
+        border: 2px dashed #1E90FF;  /* Dodger Blue border */
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #F8F8F8;  /* Light Gray background */
+        text-align: center;
+        margin-top: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  /* Box shadow */
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;  /* Transition effects */
+    }
+    .file-upload-section:hover {
+        background-color: #E8E8E8;  /* Darker gray on hover */
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);  /* Larger shadow on hover */
+    }
+</style>
+"""
+
+[widgets]
+# Custom widget styles
+file_uploader_label = "Choose your contract PDF file"
+file_uploader_accept = ["application/pdf"]
+
+[layout]
+# Layout customization
+header = """
+<div class="main-header">Business Contract Validation 📃</div>
+"""
+subheader = """
+<div class="sub-header">Upload your business contract for validation.</div>
+"""
+file_upload_section = """
+<div class="file-upload-section">
+    <h3>Upload PDF File</h3>
+    <p>Ensure your file is in PDF format.</p>
+</div>
+"""
