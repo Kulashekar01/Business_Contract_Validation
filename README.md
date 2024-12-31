@@ -1,5 +1,5 @@
 
-# Business Contract Validation
+# Business Contract Validation 
 
 Welcome to the Business Contract Validation project! This web application is designed to parse, analyze, and validate business contracts by comparing them with predefined templates. It helps in identifying key details, clauses, sub-clauses, and deviations from the standard template.
 
